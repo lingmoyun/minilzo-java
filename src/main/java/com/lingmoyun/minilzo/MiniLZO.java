@@ -5,7 +5,6 @@ package com.lingmoyun.minilzo;
  * C语言实现，通过jni封装
  *
  * @author guoweifeng
- * @date 2020/9/18 14:24
  */
 public class MiniLZO {
 

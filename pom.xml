@@ -118,7 +118,7 @@
                 </plugins>
             </build>
 
-            <!-- 配置远程发布到中央仓库，mvn deploy -->
+            <!-- 配置远程发布到中央仓库，mvn clean deploy -P release -->
             <distributionManagement>
                 <snapshotRepository>
                     <id>ossrh</id>
