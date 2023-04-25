@@ -39,8 +39,10 @@ Java_com_lingmoyun_minilzo_MiniLZO_compress(JNIEnv *env, jclass cla, jbyteArray 
     in_len = (*env)->GetArrayLength(env, src);
 
     buf = (char *) malloc((size_t) in_len + in_len / 16 + 64 + 3);
+    lzo_align_t *wrk = (lzo_align_t *)malloc(sizeof(wrkmem));
 
-    r = lzo1x_1_compress(in, in_len, buf, &out_len, wrkmem);
+    //r = lzo1x_1_compress(in, in_len, buf, &out_len, wrkmem); // 共享工作区，不适用于多线程
+    r = lzo1x_1_compress(in, in_len, buf, &out_len, wrk);
     if (r == LZO_E_OK) {
         out = (*env)->NewByteArray(env, (jsize) out_len);
         //将buf中的值复制到jbyteArray中去，数组copy
@@ -48,6 +50,7 @@ Java_com_lingmoyun_minilzo_MiniLZO_compress(JNIEnv *env, jclass cla, jbyteArray 
     } else
         out = NULL;
 
+    free(wrk);
     free(buf);
 
     return out;
