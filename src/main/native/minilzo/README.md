@@ -1,4 +1,4 @@
-author `gwf@sjychina.com`
+author `winfordguo@gmail.com`
 
 
 ### Windows 下打.dll文件
