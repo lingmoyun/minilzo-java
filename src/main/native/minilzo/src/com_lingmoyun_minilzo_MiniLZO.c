@@ -5,7 +5,7 @@
  * Class:     com_lingmoyun_minilzo_MiniLZO
  * Method:    init
  * Signature: ()V
- * Author:    guoweifeng(gwf@sjychina.com)
+ * Author:    guoweifeng(winfordguo@gmail.com)
  */
 JNIEXPORT void JNICALL Java_com_lingmoyun_minilzo_MiniLZO_init(JNIEnv *env, jclass thiz) {
     //printf("\nLZO real-time data compression library (v%s, %s).\n", lzo_version_string(), lzo_version_date());
