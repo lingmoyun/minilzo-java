@@ -6,7 +6,7 @@
 
     <groupId>com.lingmoyun</groupId>
     <artifactId>minilzo-java</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 
     <name>miniLZO For Java</name>
     <url>https://github.com/lingmoyun/minilzo-java</url>

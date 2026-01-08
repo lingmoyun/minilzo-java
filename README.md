@@ -21,7 +21,7 @@ miniLZO Java版
 <dependency>
     <groupId>com.lingmoyun</groupId>
     <artifactId>minilzo-java</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
