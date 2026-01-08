@@ -43,6 +43,8 @@ class LibLoader {
         String os = System.getProperty("os.name");
         if (os.toLowerCase().startsWith("win")) {
             return libname + ".dll";
+        } else if (os.toLowerCase().startsWith("mac")) {
+            return "lib" + libname + ".dylib";
         } else if (os.toLowerCase().startsWith("linux")) {
             return "lib" + libname + ".so";
         } else {

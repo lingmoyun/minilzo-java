@@ -19,6 +19,17 @@ MSBuild minilzo_java.sln /t:Rebuild /p:Configuration=Release /p:Platform=x64
 将生成的`build\Release\minilzo_java.dll`文件复制至`src/main/resources/libs`目录下
 
 
+### MacOS 下打.dylib文件
+> 命令行执行
+```shell
+mkdir build
+cd build
+cmake ..
+make
+```
+将生成的`build/libminilzo_java.dylib`文件复制至`src/main/resources/libs`目录下
+
+
 ### Linux 下打.so文件
 > 命令行执行
 ```shell
